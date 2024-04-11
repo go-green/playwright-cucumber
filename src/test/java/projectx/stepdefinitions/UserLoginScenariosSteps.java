@@ -9,15 +9,15 @@ package projectx.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import projectx.hooks.ScenarioContext;
+import projectx.hooks.Hooks;
 import projectx.pages.PxLoginPage;
 
 public class UserLoginScenariosSteps extends BaseSteps {
 
     PxLoginPage pxLoginPage;
 
-    public UserLoginScenariosSteps (ScenarioContext scenarioContext) {
-        this.page = scenarioContext.getPage();
+    public UserLoginScenariosSteps (Hooks hooks) {
+        this.page = hooks.getPage();
     }
 
     @Given("^I have navigated to GitHub login page$")

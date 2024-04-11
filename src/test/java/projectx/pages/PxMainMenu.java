@@ -14,7 +14,7 @@ import projectx.components.PageElement;
 
 public class PxMainMenu extends PageComponent {
 
-    private static final Logger logger = LogManager.getLogger(PxMainMenu.class);
+    private static Logger logger = LogManager.getLogger(PxMainMenu.class);
 
     private static String mainMenuParent = ".main-navigation";
 

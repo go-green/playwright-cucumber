@@ -14,11 +14,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(monochrome = true,
         features = "src/test/resources/features/",
         glue = {"projectx/stepdefinitions", "projectx/hooks"},
-        plugin = {"pretty","junit:target/junitreport.xml","json:target/jsonreport.json","html:target/cucumber-reports"}
+        plugin = {"pretty","junit:target/junitreport.xml","json:target/jsonreport.json","html:target/cucumber-reports.html"}
 
 )
 public class TestRunner {
-
     private TestRunner() {
     }
 }

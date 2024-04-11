@@ -1,6 +1,7 @@
 Feature: User login scenarios
 
-  Scenario: User is able to login to GitHub using valid credentials
-    Given I have navigated to GitHub login page
-    When I enter my valid credentials
-    Then I am navigated to the default landing page
+  @Login
+  Scenario: User is able to login to SauceDemo using valid credentials
+    Given I have navigated to SauceDemo login page
+    When I enter valid credentials
+    Then I am navigated to the inventory page

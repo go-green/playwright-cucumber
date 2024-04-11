@@ -14,15 +14,15 @@ import projectx.components.PxInput;
 
 public final class PxLoginPage extends BasePage {
 
-    private static final Logger logger = LogManager.getLogger(PxLoginPage.class);
+    private static Logger logger = LogManager.getLogger(PxLoginPage.class);
 
-    private String loginFormParent = "";
+    private String loginFormParent = "div.login_wrapper-inner";
 
-    private PxInput username = new PxInput(this.page, loginFormParent, "input[name='username']");
+    private PxInput username = new PxInput(this.page, loginFormParent, "input[data-test='username']");
 
-    private PxInput password = new PxInput(this.page, loginFormParent, "input[name='password']");
+    private PxInput password = new PxInput(this.page, loginFormParent, "input[data-test='password']");
 
-    private PageElement loginButton = new PageElement(this.page, loginFormParent, ".btn-login");
+    private PageElement loginButton = new PageElement(this.page, loginFormParent, "input[data-test='login-button']");
 
     public PxLoginPage(Page page) {
         super(page);
@@ -37,8 +37,8 @@ public final class PxLoginPage extends BasePage {
 
 
     public void navigate() {
-        logger.info("Navigating to /ar/login");
-        this.navigate("/login");
+        logger.info("Navigating to login page");
+        this.navigate("/");
     }
 
     public void login(String username, String password) {

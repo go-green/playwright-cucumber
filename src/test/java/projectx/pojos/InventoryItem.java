@@ -1,3 +1,8 @@
+/**
+ * @author Rasika Ranawaka
+ * @filename InventoryItem
+ * @date 25/01/2024
+ */
 package projectx.pojos;
 
 import lombok.Data;

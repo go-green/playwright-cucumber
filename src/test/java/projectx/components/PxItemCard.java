@@ -1,3 +1,8 @@
+/**
+ * @author Rasika Ranawaka
+ * @filename BaseComponent
+ * @date 23/01/2024
+ */
 package projectx.components;
 
 import com.microsoft.playwright.Page;

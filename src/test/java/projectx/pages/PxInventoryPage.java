@@ -1,3 +1,8 @@
+/**
+ * @author Rasika Ranawaka
+ * @filename PxInventoryPage
+ * @date 25/01/2024
+ */
 package projectx.pages;
 
 import com.microsoft.playwright.Page;
